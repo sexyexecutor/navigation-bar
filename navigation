@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyWebsite | Professional Web Solutions</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+    }
+
+    /* Navbar */
+    .navbar {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-link {
+      padding: 0.5rem 1rem;
+      transition: 0.3s ease;
+      border-radius: 0.375rem;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      background-color: #ffc107;
+      color: #000 !important;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #0d6efd 40%, #6610f2 100%);
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #212529;
+      color: #ccc;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+  <div class="container">
+    <a class="navbar-brand" href="#">MyWebsite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="home" class="hero">
+  <div class="container" data-aos="fade-up">
+    <h1>Empowering Your Digital Presence</h1>
+    <p class="mb-4">Crafting tailored web solutions for businesses that demand performance & elegance.</p>
+    <a href="#contact" class="btn btn-warning btn-lg">Get in Touch</a>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main class="container">
+
+  <section id="about" data-aos="fade-up">
+    <h2 class="section-heading text-center">About Us</h2>
+    <p class="text-center">We are a digital agency specializing in high-performance websites, branding, and consulting. With a focus on clean design and strong user experience, we help clients create an online presence that truly represents them.</p>
+  </section>
+
+  <section id="services" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="section-heading text-center">Our Services</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <h5>Web Development</h5>
+        <p>Responsive, scalable, and tailored websites for all platforms and industries.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5>SEO Optimization</h5>
+        <p>Boost your visibility with on-page and technical SEO strategies.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5>Consulting</h5>
+        <p>Strategic digital consulting to align your goals with the latest tech trends.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up" data-aos-delay="200">
+    <h2 class="section-heading text-center">Contact Us</h2>
+    <p class="text-center mb-4">We'd love to hear from you. Reach out to discuss your project or just say hello.</p>
+    <div class="text-center">
+      <a href="mailto:info@mywebsite.com" class="btn btn-outline-primary">Email Us</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p class="mb-1">© 2025 MyWebsite. All rights reserved.</p>
+    <p>Made with ❤️ by <a href="#">Your Company</a></p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ once: true });</script>
+
+</body>
+</html>
